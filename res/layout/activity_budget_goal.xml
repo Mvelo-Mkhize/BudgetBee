@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFDE7">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Budget Goals:"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextMinBudget"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Minimum Monthly Budget"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextMaxBudget"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Maximum Monthly Budget"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnSaveBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Budget Goals"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

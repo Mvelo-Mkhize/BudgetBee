@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FAQ">
+
+    <Button
+        android:id="@+id/buttonTips"
+        android:layout_width="310dp"
+        android:layout_height="56dp"
+        android:text="TIPS"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <Button
+        android:id="@+id/buttonForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="307dp"
+        android:onClick="openForgotPasswordActivity" />
+
+    <Button
+        android:id="@+id/buttonGlobalAvailability"
+        android:layout_width="177dp"
+        android:layout_height="39dp"
+        android:text="Global Availability"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="313dp"
+        android:onClick="openGlobalAvailabilityActivity" />
+
+    <Button
+        android:id="@+id/buttonSupportedCurrencies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supported Currencies"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="596dp"
+        android:onClick="openSupportedCurrenciesActivity" />
+
+    <Button
+        android:id="@+id/buttonSupportedBanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supported Banks"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="596dp"
+        android:onClick="openSupportedBanksActivity" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/keysign"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/globesign"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dollarsign"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/buildingsign"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

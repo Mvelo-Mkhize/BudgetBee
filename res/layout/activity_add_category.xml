@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Category"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#37474F"
+            android:layout_marginBottom="24dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Existing Categories"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#616161"
+            android:layout_marginBottom="8dp" />
+
+
+        <LinearLayout
+            android:id="@+id/categoryListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginBottom="24dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Rent"
+                android:textSize="18sp"
+                android:textColor="#D32F2F"
+                android:padding="4dp" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/Rent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Electricity"
+                android:textSize="18sp"
+                android:textColor="#D32F2F"
+                android:padding="4dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/electricity" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/categoryNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter new category"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/saveCategoryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Category"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FDD835"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+</ScrollView>

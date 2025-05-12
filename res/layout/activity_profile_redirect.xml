@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".Profile_Redirect">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="9dp"
+            android:src="@drawable/exit2"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/pic"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp" />
+
+
+    <LinearLayout
+        android:layout_width="293dp"
+        android:layout_height="205dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Surname"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:text="Phone:"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Email:"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/gray"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="111dp"
+                android:layout_marginLeft="35dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/BankBalance"
+                    android:layout_width="125dp"
+                    android:layout_height="82dp"
+                    app:srcCompat="@drawable/bank"
+                    android:contentDescription="Bank"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BANK BALANCE"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="55dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Cash"
+                    android:layout_width="125dp"
+                    android:layout_height="82dp"
+                    app:srcCompat="@drawable/cash"
+                    android:contentDescription="Cash"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physical Cash"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/gray"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_marginLeft="35dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/DebitCard"
+                    android:layout_width="125dp"
+                    android:layout_height="82dp"
+                    app:srcCompat="@drawable/debitcard"
+                    android:contentDescription="Debit Card"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Debit Card"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="103dp"
+                android:layout_marginLeft="55dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/CreditCardreditCard"
+                    android:layout_width="125dp"
+                    android:layout_height="82dp"
+                    app:srcCompat="@drawable/creditcard"
+                    android:contentDescription="Credit Card"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
