@@ -12,6 +12,5 @@ Group Members:
 - Wandile Phakathi.
 - Luyanda Zuma.
 
-https://github.com/Mvelo-Mkhize/BudgetBee the github link
+https://github.com/Mvelo-Mkhize/BudgetBee
 
-the unlisted youtube link :
